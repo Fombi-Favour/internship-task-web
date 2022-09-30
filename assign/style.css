@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: url("background.jpg") no-repeat;
+  background-size: cover;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 50rem;
+  height: 42rem;
+}
+.inner-box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.inner-card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 254, 254, 0.85);
+  padding: 20px;
+}
+.card h2{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.input-field{
+  width: 75%;
+  font-size: 1.3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin: 6px 20px;
+  height: 32px;
+  padding: 10px 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.submit-btn{
+  width: 7rem;
+  height: 3rem;
+  background: rgba(23, 58, 237, 0.92);
+  border: 1px solid rgba(23, 58, 237, 0.92);
+  margin-left: 1.5rem;
+  transition: 0.5s ease-in;
+}
+
+.submit-btn:hover{
+  background: rgba(11, 116, 237, 0.954);
+  color: #fff;
+  border-radius: 18px;
+}
+
+@media screen and (max-width: 960px){
+  .card{
+    width: 24rem;
+    height: 40rem;
+  }
+  .inner-card{
+    background: rgba(247, 247, 247, 0.941);
+  }
+  .card h2{
+    font-size: 40px;
+  }
+  .input-field{
+    font-size: 16px;
+  }
+}
